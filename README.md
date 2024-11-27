@@ -1,6 +1,6 @@
 # pico_nrf_hm
-Basic communication with one Hoymiles inverter HM... (HM300 and HM 800 tested).
-Code is micropython.
+Basic communication with one Hoymiles inverter HM... (HM300 and HM800 tested).
+Code is micropython. You may want to use Thonny for editing.
 
 Hardware:
 - Raspberry Pi Pico (tested) or maybe any other microcontroller suitable for micropython and
