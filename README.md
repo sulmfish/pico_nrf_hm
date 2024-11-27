@@ -1,16 +1,18 @@
 # pico_nrf_hm
 Basic communication with one Hoymiles inverter HM... (HM300 and HM 800 tested).
 Code is micropython.
+
 Hardware:
 - Raspberry Pi Pico (tested) or maybe any other microcontroller suitable for micropython and
 - NRF24L01+ module ("+" is important; NRF24L01 does not work!) and probably
 - capacitor: I supplied the NRF from the 3V3 supply of the Pico but had to solder a 100uF capacitor to GND and Vcc of the NRF module (maybe 10uF is enough).
+
 Software:
-- Dependencies:
-1. nrf24l01.py must be on your Pico. You can download the file from
+- nrf24l01.py must be on your Pico. You can download the file from
 https://github.com/micropython/micropython-lib/tree/master/micropython/drivers/radio/nrf24l01.
 (You can then open the file with Thonny and save it to the connected Pico as nrf24l01.py.)
-2. In the file pico_nrf_hm.py is the basic code for communicating with the inverter via a NRF24L01+ module. (You can open the file with Thonny and save it to the connected Pico as pico_nrf_hm.py.)
+- In the file pico_nrf_hm.py is the code for communicating with the inverter via a NRF24L01+ module. (You can open the file with Thonny and save it to the connected Pico as pico_nrf_hm.py.)
+
 The file main.py is just an example to start communication with the inverter.
 You can run the file main.py with Thonny or save it from Thonny to the Pico as main.py, so that it starts automatically when powering the Pico.
 Modify the file main.py according to your needs: Receive data from the inverter; send commands to the inverter; add code for a display module, ....
